@@ -17,7 +17,7 @@ class ParentWindow(Frame):
          self.lbl_welcome.grid(row=0,column=0,padx=(27,0),pady=(10,0),sticky=N+W)
      
          self.createpage = Button(self.master,text="createpage",width=5,height=2,command=build)
-         self.createpage.grid(row=3,column=0,padx=(27,0),pady=(10,0),sticky=E+W)
+         self.createpage.grid(row=6,column=0,padx=(27,0),pady=(10,0),sticky=E+W)
 
          OPTIONS = ["Arial","Times New Roman", "Verdana", "Courier"] 
 
@@ -25,14 +25,14 @@ class ParentWindow(Frame):
          variable.set(OPTIONS[0]) # default value
 
          self.x = OptionMenu(self.master, variable, *OPTIONS)
-         self.x.grid(row=6, column=0, padx=(27,0),pady=(10,0),sticky=E+W) 
+         self.x.grid(row=3, column=0, padx=(27,0),pady=(10,0),sticky=E+W) 
 
 
       
 
 def build():
     f = open("summersale.html", "w")
-    f.write('<html> <body font-family:' + variable.get()'> <h1> Stay tuned for our amazing summer sale! </h1> </body> </html>')
+    f.write('<html> <body font-family:'+ variable.get()'> <h1> Stay tuned for our amazing summer sale! </h1> </body> </html>')
     f.close()
 
     #Change path to reflect file location
