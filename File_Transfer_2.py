@@ -27,15 +27,15 @@ def transfer():
     files = os.listdir(source)    
 
     for i in files:
-        modifyTime = os.path.getmtime(source)   # Returns the time of last modification of path.
-        modifyDate = datetime.fromtimestamp(modifyTime)#.strftime('%Y-%m-%d') to convert to a formated string
+        modifyTime = os.path.getmtime(source+i)   # Returns the time of last modification for all files in the source folder.
+        modifyDate = datetime.fromtimestamp(modifyTime)#.strftime('%Y-%m-%d') to convert to a formated string 
         todaysDate = datetime.today() # current date
-        modifyDateLimit = modifyDate - timedelta(days=1) # If modified within last 24 hours
+        DateLimit = todaysDate - timedelta(days=1) # If modified within last 24 hours
         
-        if modifyDateLimit > todaysDate : # If the file was edited less then 24 hours ...
+        if modifyDate > DateLimit : # If the file was edited less then 24 hours ...
             shutil.copy(source+i, destination)  # ... copy file
 
 if __name__ == "__main__":
-  myList()
   transfer()
+  
     
