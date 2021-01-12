@@ -1,23 +1,33 @@
-# Python-Projects
+# Basic Python Projects
+
+***
+
+These are basic projects written in Python. They use various modules such as tkinter sqlite3 and Django
+
+***
+
+## Projects
+
+<ol>
+<li>Phonebook</li>
+<li>Check Files GUI</li>
+<li>Personal Checkbook App</li>
+</ol>
 
 
 
-Projects I have been building with Python
+## Phonebook
 
-- Phonebook
-- File Transfer Program
-- Django 
-
-
-Phonebook
-
-A script with a database that allows you to save delete and modify user info
+This project functions as a phone book for a user. It saves a contact's name, phone number, and <br>
+email address in a database and allows the user to update and delete previously stored entries.
 
 
-File Transfer Program
+## Check Files GUI
 
-A script combined with tkinter that allows you to select a source folder and a destination path, and gives you the functionality to copy any files that were modified within the last 24 hours.
+This project allows the user to choose transfer all files that have been modified in the last 24 hours from one <strong> chosen </strong> directory to another. <br>
 
-Django 
 
-Using Django Framework, created a project called "DjangoUniversity" in a virtual environment where we created models and made migrations.
+## Personal Checkbook App
+
+This projects functions as a personal checkbook book for a users. It allows them to track their transactions across mulitple accounts
+
