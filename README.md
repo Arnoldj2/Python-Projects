@@ -22,7 +22,7 @@ This project functions as a phone book for a user. It saves a contact's name, ph
 email address in a database and allows the user to update and delete previously stored entries.
 
 
-## Check Files GUI
+## Files Transfer Project
 
 This project allows the user to choose transfer all files that have been modified in the last 24 hours from one <strong> chosen </strong> directory to another. <br>
 
